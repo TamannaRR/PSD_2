@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800|Open+Sans:400,600,700,800&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+
+  font-family: 'Open Sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+} 
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #333366;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 10px;
+} 
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: #999999;
+    font-size: 14px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+   
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}    
+.logo{
+    width: 20%;
+   
+}
+.nav{
+    width: 50%;
+    
+}
+.nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav ul li{
+    margin-left: 20px;
+}
+.nav ul li a{
+    color: #336699;
+    font-size: 14px;
+    font-weight: 600;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.content{
+    width: 475px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content h1{
+    color: white;
+    font-size: 50px;
+}
+.icon{
+    position: absolute;
+    bottom: 20%;
+    left: 48.5%;
+    transform: translate(-48.5%,-20%);
+    animation: icon-ani 1s linear infinite;
+    animation-direction: alternate;
+}
+.icon i{
+    color: white;
+    font-size: 22px;
+}
+.who_content{
+    margin-top: 90px;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.who_content::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #ff6633;
+}
+   
+.who_content h1{
+   
+}
+.who_content p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 100px;
+    width: 77%;
+}
+
+.who_img{
+    width: 50%;
+    float: right;
+    margin-top: 70px;
+    
+}
+.who_img img{
+    width: 60%;
+}
+
+@keyframes icon-ani{
+    0%{
+        transform: translate(-50%,0%);
+    }
+    100%{
+        transform: translate(-50%,-100%);
+    }
+}
+
